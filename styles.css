@@ -100,7 +100,7 @@ nav a:hover {
     text-align: center;
     color: #fff;
     margin-bottom: 30px; /* Reduced from 40px */
-    background-image: url('/images/study.jpeg'); /* Add your image path here */
+    background-image: url('images/study.jpeg'); /* Add your image path here */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: bottom; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
