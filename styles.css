@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Lora', serif, Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -9,6 +9,12 @@ body {
     animation: fadeIn 0.5s ease-in-out;
     font-size: 0.9rem; /* Reduced from 1rem */
     
+}
+
+@media (max-width: 600px) {
+    body {
+        font-family: 'Lora', serif, Georgia, 'Times New Roman', Times, serif;
+    }
 }
 
 @keyframes fadeIn {
