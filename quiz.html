@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="PrepHub is your ultimate learning partner, offering notes, quizzes, career guidance, and more to help you achieve your academic and career goals.">
-    <title>PrepHub - Your Learning Partner</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Select your stream to access previous year question papers for BCA and BTech CSE." />
+    <title>PrepHub - Select Stream for Previous Year Questions</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        .stream-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 20px;
+        }
+        .stream-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 40%;
+            padding: 20px;
+            box-shadow: 2px 2px 8px #aaa;
+            text-align: center;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+        .stream-card:hover {
+            box-shadow: 4px 4px 12px #888;
+        }
+        .stream-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .stream-card h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .stream-card p {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.jpeg" alt="PrepHub Logo - Your Ultimate Learning Partner">
+            <img src="images/logo.jpeg" alt="PrepHub Logo - Your Ultimate Learning Partner" />
         </div>
     </header>
     <nav>
-        <div class="margin-left"><a href="index.html">Home</a>
-        <a href="sgpa-calculator.html">SGPA Calculator</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a></div>
-    </nav>
-    <section class="hero">
-        <h1>Welcome to PrepHub</h1>
-        <p>PrepHub is your ultimate learning partner, designed to help you master your skills and achieve your academic and career goals. Whether you're a student, a professional, or a lifelong learner, we provide the tools and resources you need to succeed.</p>
-    
-    
-    </section>
-
-  
-    <section id="features">
-        <div class="feature">
-            <img src="images/quiz.png" alt="Interactive quizzes on a laptop screen" loading="lazy">
-            <h3>Quizzes to Test Your Knowledge</h3>
-            <p>Engage in interactive quizzes with instant feedback to track your progress and improve your understanding.</p>
+        <div class="margin-left">
+            <a href="index.html">Home</a>
+            <a href="sgpa-calculator.html">SGPA Calculator</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </div>
-    </section>
+    </nav>
 
+    <main>
+        <h1 style="text-align:center; margin-top: 30px;">Select Your Stream</h1>
+        <div class="stream-container">
+            <div class="stream-card" onclick="location.href='https://forms.gle/VBc4AuPM7fUPm4PGA'">
+                <img src="images/bca_logo.png" alt="BCA Stream" width="200px" />
+                <h3>BCA (Bachelor of Computer Applications)</h3>
+                <p>BCA is a three-year undergraduate program focusing on computer applications and software development. It covers programming, networking, database management, and more.</p>
+            </div>
+            <div class="stream-card" onclick="location.href='https://forms.gle/4aHdJ3G8hMeuub3o9'">
+                <img src="images/btech_logo.png" alt="BTech CSE Stream" width="200px"/>
+                <h3>BTech CSE (Bachelor of Technology in Computer Science Engineering)</h3>
+                <p>BTech CSE is a four-year engineering degree focusing on computer science, software engineering, hardware, and emerging technologies.</p>
+            </div>
+        </div>
+    </main>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At PrepHub, our mission is to provide high-quality educational resources to help you achieve your learning goals. We believe in empowering learners with the tools they need to succeed.</p>
-        <p><strong>Why Choose PrepHub?</strong></p>
-        <ul>
-            <li><strong>Comprehensive Resources:</strong> Access a wide range of educational materials, including notes, quizzes, and career guidance.</li>
-            <li><strong>Interactive Learning:</strong> Engage with interactive quizzes and track your progress to ensure you're always improving.</li>
-            <li><strong>Expert Guidance:</strong> Get advice from experts to help you navigate your career pathways and make informed decisions.</li>
-            <li><strong>User -Friendly Interface:</strong> Our platform is designed to be intuitive and easy to use, so you can focus on learning.</li>
- </ul>
-    </section>
-
-
-    <section id="contact">
+    <section id="contact" style="margin-top: 50px;">
         <h2>Get in Touch</h2>
         <p>If you have any questions or need assistance, feel free to reach out to us!</p>
         <div class="contact-info">
             <p>Email: <a href="mailto:ajayrakwal3@gmail.com">ajayrakwal3@gmail.com</a></p>
-            <p>Feedback: If you have any complaints or have any feedbcak for us, then please make sure to address it by clicking <a href="https://forms.gle/rcQErcUt6u8f4Wrf7">here</a></p>
-            
+            <p>Feedback: If you have any complaints or feedback for us, please address it by clicking <a href="https://forms.gle/rcQErcUt6u8f4Wrf7">here</a></p>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 PrepHub. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-        </div>
     </footer>
 </body>
 </html>
